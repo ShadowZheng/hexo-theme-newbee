@@ -41,17 +41,21 @@ html, body, #container
   height: 100%
 
 body
-  font-family: "微软雅黑","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size:16px;
-  background:#fff;
+  font-family: font-sans, font-chs;
+  font-size: 16px;
+  background: #fff;
   color: rgba(0,0,0,0.6);
   -webkit-overflow-scrolling: touch
 
+h2,h3,h4,h5,h6 {
+  font-family: font-serif, font-chs;
+}
 h1,h2,h3{
   display: block;
 }
 h1 {
-  font-size:1.5em
+  font-size: 1.5em;
+  font-family: "Segoe UI", font-sans, font-chs;
 }
 h2 {
   font-size:1.3em
@@ -110,6 +114,7 @@ a {
 @import "_partial/tagcloud"
 @import "_partial/scroll"
 @import "_partial/mobile-slider"
+@import "_partial/post/youyan"
 
 if sidebar
   @import "_partial/sidebar"
